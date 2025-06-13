@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Quicksand;
+    
+}
+body{
+    background-color: rgb(206, 199, 117);
+}
+.navbar {
+    background-color: rgb(20, 21, 21);
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: rgb(20, 21, 21);
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(20, 21, 21);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(20, 21, 21);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+  .repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(206, 199, 117);
+    padding: 40px;
+  }
+
+  .repo-box {
+    background-color: #000;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    text-align: center;
+  
+    transition: transform 0.3s;
+  }
+
+  .repo-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }

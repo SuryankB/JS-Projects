@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List (Event Phases)</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: lightgray; 
+            margin: 5px; 
+            padding: 10px; 
+            cursor: pointer;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <h2>📌 To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <button id="clearAll">Clear All</button>
+
+    <ul id="taskList">
+        <li>Sample Task 1</li>
+        <li>Sample Task 2</li>
+    </ul>
+
+    <script>
+        let taskList = document.getElementById("taskList");
+        let clearAll = document.getElementById("clearAll");
+
+        // ✅ Event Delegation - Handle click on tasks (Bubbling)
+        taskList.addEventListener("click", function(event) {
+            if (event.target.tagName === "LI") {
+                event.target.remove();  // Remove the clicked task
+            }
+        });
+
+        // ✅ Prevent event from propagating (Stop Bubbling)
+        clearAll.addEventListener("click", function(event) {
+            event.stopPropagation();  // Stops event bubbling
+            taskList.innerHTML = "";  // Clears all tasks
+        });
+
+        // ✅ Capturing Phase - Parent captures event first
+        document.body.addEventListener("click", function() {
+            console.log("Body clicked first! (Capturing)");
+        }, true); // 👈 Capturing phase enabled
+
+        // ✅ Function to Add a New Task
+        function addTask() {
+            let taskInput = document.getElementById("taskInput");
+            if (taskInput.value.trim() === "") return;
+
+            let newTask = document.createElement("li");
+            newTask.textContent = taskInput.value;
+            taskList.appendChild(newTask);
+            taskInput.value = "";
+        }
+    </script>
+
+</body>
+</html>

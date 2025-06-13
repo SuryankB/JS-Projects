@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Quicksand;
+}
+body{
+    background-color: rgb(206, 199, 117);
+}
+.navbar {
+    background-color: rgb(20, 21, 21);
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        width: 35%;
+        margin: auto;
+        background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+        height: 400px;
+        color: aliceblue;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        border: 2px solid #444;
+        text-align: center;
+    }
+    
+    .box p {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #f1c40f;
+    }
+    
+    input {
+        padding: 12px;
+        border: 2px solid #f1c40f;
+        border-radius: 5px;
+        background: #333;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        transition: 0.3s;
+        margin: 5px;
+    }
+    
+    input:focus {
+        border-color: #e67e22;
+        outline: none;
+        box-shadow: 0px 0px 8px rgba(243, 156, 18, 0.5);
+    }
+    .calculate {
+        width: 40%;  /* Set button width to 40% */
+        padding: 12px;
+        background: #f1c40f;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 10px auto 0; 
+        text-transform: uppercase;
+        display: block; 
+        text-align: center;
+    }
+    
+    .calculate:hover {
+        background: #e67e22;
+        box-shadow: 0px 0px 10px rgba(230, 126, 34, 0.6);
+    }
+    
