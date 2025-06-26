@@ -1,90 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: Quicksand;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
-body{
-    background-color: rgb(206, 199, 117);
+
+body {
+  background: linear-gradient(to right, #0b0a0a, #292336, #181818);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .navbar {
-    background-color: rgb(20, 21, 21);
-    padding: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgba(24, 27, 39, 0.25);
+  border: 1px solid rgba(24, 27, 39, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border-radius: 25px;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
+
+.navbar a:hover {
+  color: #da9696;
+  transform: scale(1.08);
+}
+
+
+.navbar a.active {
+  background: linear-gradient(to right, #ff416c, #ff4e00);
+  color: white;
+}
+.navmain{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background: rgba(24, 27, 39, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.02);
+  color: #ffffffb0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 20px;
+  margin-top: auto;
+  gap: 15px;
+  border-radius: 25px 25px 0 0;
+}
+.social-footer {
+  display: flex;
+  gap: 25px;
+}
+
+.social-footer a {
+  color: #ffffffcc;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-footer a:hover {
+  color: #da9696;
+  transform: scale(1.04);
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #bbb;
+}
+
 .container{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
 }
 .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 20px;
-        width: 35%;
-        margin: auto;
-        background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
-        height: 400px;
-        color: aliceblue;
-        border-radius: 12px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-        border: 2px solid #444;
-        text-align: center;
-    }
-    
-    .box p {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #f1c40f;
-    }
-    
-    input {
-        padding: 12px;
-        border: 2px solid #f1c40f;
-        border-radius: 5px;
-        background: #333;
-        color: white;
-        font-size: 1rem;
-        text-align: center;
-        transition: 0.3s;
-        margin: 5px;
-    }
-    
-    input:focus {
-        border-color: #e67e22;
-        outline: none;
-        box-shadow: 0px 0px 8px rgba(243, 156, 18, 0.5);
-    }
-    .calculate {
-        width: 40%;  /* Set button width to 40% */
-        padding: 12px;
-        background: #f1c40f;
-        color: black;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.3s;
-        margin: 10px auto 0; 
-        text-transform: uppercase;
-        display: block; 
-        text-align: center;
-    }
-    
-    .calculate:hover {
-        background: #e67e22;
-        box-shadow: 0px 0px 10px rgba(230, 126, 34, 0.6);
-    }
-    
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  background: rgba(41, 35, 54, 0.85);
+  border-radius: 35px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  max-width: 90vw;
+}
+
+.box p {
+  font-size: 36px;
+  font-weight: 500;
+  color: #e0dede;
+  text-align: center;
+  padding-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+}
+
+.box input{
+  padding: 20px;
+  background-color: #3caf96;
+  font-size: large;
+  font-weight: 300;
+  border: none;
+}

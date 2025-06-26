@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #0b0a0a, #292336, #181818);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navmain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgba(24, 27, 39, 0.25);
+  border: 1px solid rgba(24, 27, 39, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 10px 25px;
+  border-radius: 25px;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #da9696;
+  transform: scale(1.08);
+}
+
+
+.navbar a.active {
+  background: linear-gradient(to right, #ff416c, #ff4e00);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+
+
+button.secondary-btn {
+  padding: 14px 24px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  width: 100%;
+  background: rgba(24, 27, 39, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.02);
+  color: #ffffffb0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 20px;
+  margin-top: auto;
+  gap: 15px;
+  border-radius: 25px 25px 0 0;
+}
+
+.social-footer {
+  display: flex;
+  gap: 25px;
+}
+
+.social-footer a {
+  color: #ffffffcc;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-footer a:hover {
+  color: #da9696;
+  transform: scale(1.04);
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #bbb;
+}
+

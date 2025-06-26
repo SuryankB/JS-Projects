@@ -52,7 +52,7 @@ body{
             <div>Welcome to JS WORLD</div>
         </div>
     </div>
-    <h2>📌 To-Do List</h2>
+    <h2> To-Do List</h2>
     <input type="text" id="taskInput" placeholder="Enter a task">
     <button onclick="addTask()">Add Task</button>
     <button id="clearAll">Clear All</button>
@@ -66,14 +66,14 @@ body{
         let taskList = document.getElementById("taskList");
         let clearAll = document.getElementById("clearAll");
 
-        // ✅ Event Delegation - Handle click on tasks (Bubbling)
+        //  Event Delegation - Handle click on tasks (Bubbling)
         taskList.addEventListener("click", function(event) {
             if (event.target.tagName === "LI") {
                 event.target.remove();  // Remove the clicked task
             }
         });
 
-        // ✅ Prevent event from propagating (Stop Bubbling)
+        //  Prevent event from propagating (Stop Bubbling)
         clearAll.addEventListener("click", function(event) {
             event.stopPropagation();  // Stops event bubbling
             taskList.innerHTML = "";  // Clears all tasks
