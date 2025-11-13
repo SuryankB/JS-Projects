@@ -123,8 +123,19 @@ body {
 
 .box input{
   padding: 20px;
-  background-color: #3caf96;
+  background-color: #d4d2da;
   font-size: large;
   font-weight: 300;
   border: none;
+  border-radius: 10px;
+}
+.calculate{
+  padding: 14px 24px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #412e5c, #0e2b5c);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }

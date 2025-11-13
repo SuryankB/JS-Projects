@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Guesser</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Number Guesser</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
     <link rel="stylesheet" href="numberguesser.css">
 </head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <a href="index.html" class="home">Home</a>
-            <div>Welcome to JS WORLD</div>
-        </div>
+        <div class="navmain">
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="clones.html">CLONES</a>
+    <a href="jsprojects.html">JSPROJECTS</a>
+    <a href="#">MYBEST</a>
+    <a href="contactme.html" class="contact-button">CONTACT ME</a>
+  
+  </div>
+  </div>
         <div class="box">
             <form class="form-container">
               <h2>Number Guessing Game</h2>
@@ -22,9 +28,20 @@
               <label for="guess">Enter your guess:</label>
               <input type="number" id="guess" name="guess" placeholder="Guess the Number" required>
               
-              <button type="submit">Submit Guess</button>
+              <button  type="submit" id="submit">Submit Guess</button>
             </form>
           </div>
-          
+      <footer class="footer">
+    <div class="social-footer">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-text">© 2025 Suryank Batham. All rights reserved.</p>
+  </footer>
+  
+  <script src="numberguesser.js"></script>
+
 </body>
 </html>
